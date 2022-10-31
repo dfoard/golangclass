@@ -11,12 +11,13 @@ import (
 // like a "class" a structure works like a blueprint
 type PirateTreasure struct {
     x, y int            // x and y are both "int" {x y}
+    owner  string      // owner of treasure
 }
 
 func main() {
 
     // create a "struct" called, 'p' of the type "PirateTreasure"
-    p := PirateTreasure{1, 2}                // here we create a struct "p"
+    p := PirateTreasure{1, 2, "Curly the Pirate"}                // here we create a struct "p"
     
     
     // This prints an instance of our PirateTreasure struct.
@@ -34,4 +35,7 @@ func main() {
 
     // To print a representation of a PirateTreasure, use %p
     fmt.Printf("PirateTreasure: %p\n", &p)     // structures are a topic we'll dive deeper into in subsequent labs
+
+    //print the owner
+    fmt.Println(p.owner)
 }
