@@ -1,0 +1,7 @@
+Functions:
+
+Q: It seems counter-intuitive that sort.Slice() is passed the "value" people, and not a pointer to people, isn't it? After all, we want to mutate people. Didn't we learn that passing values to a function requires the use of a pointer?
+A: Sounds like you understand it PERFECTLY! Just understand that a slice IS a pointer to an array. The mutation is being done to the array that the slice is pointing to.
+
+Q: Is an anonymous function like we just studied a lambda function?
+A: For sure. In computer programming, an anonymous function, or lambda abstraction, or function literal, is a function definition that is not bound to an identifier.
