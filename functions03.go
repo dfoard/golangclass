@@ -31,7 +31,7 @@ func main() {
     playerChar, err := rollchar("Gandalf", "Turnip")
 
     if err != nil {
-        fmt.Println("Error while spawning your requested character.")
+        fmt.Println("Error while spawning your requested character.", err)
     } else {
         fmt.Println(playerChar, "has been generated.")
     }
