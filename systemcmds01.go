@@ -11,7 +11,7 @@ import (
 func main() {
 
     // prepares a "cmd" struct
-    cmd := exec.Command("ls")
+    cmd := exec.Command("ls"," *xml")
 
     err := cmd.Run()
 
