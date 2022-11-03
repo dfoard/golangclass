@@ -22,3 +22,10 @@ Create a new program using interfaces.
 Again, there is no explicit declaration that says that the tiger struct implements the animal interface. 
 During compilation, go notices that tiger struct implements all methods of animal interface hence it is allowed. 
 Any other type which implements all methods of the animal interface becomes of that interface type.
+
+Q: Why use a buffered channel?
+A: Buffered channels can be used to control a data flow. Suppose a receiver typically processes data more quickly than the sender. Occasionally, however, the sender 'bursts'. To limit the project load on the receiver, we could use a buffered channel.
+Q: How "fast" are channels?
+A: Channels are instantaneous. The problem is that the sender AND receiver need to both be in a ready state.
+Q: What if the sender always works faster than the receiver?
+A: If the sender always works faster than the receiver, the buffer will always be filled, no matter the size. Just use an unbuffered channel in this instance.
