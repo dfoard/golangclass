@@ -16,3 +16,9 @@ If we want a method to modify its receiver (what is passed to it), we must use a
 If we do not want to alter some data, the value of the receiver can be passed instead of a pointer to its receiver. In this case, the receiver is treated more like an argument.
 Pointers are not safe for concurrent access. When you use multiple threads, you will get inconsistent results if you are changing and reading data from the same places in memory.
 Unlike C, Go has no pointer arithmetic.
+
+Interfaces:
+Create a new program using interfaces. 
+Again, there is no explicit declaration that says that the tiger struct implements the animal interface. 
+During compilation, go notices that tiger struct implements all methods of animal interface hence it is allowed. 
+Any other type which implements all methods of the animal interface becomes of that interface type.
